@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe Book, type: :model do
   subject do
-    described_class.new(title: 'harry potter')
+    described_class.new(title: 'harry potter', author: 'RL Stine', prices: '21.23', published: '2021-02-02')
   end
 
   it 'is valid with valid attributes' do
@@ -18,7 +18,7 @@ end
 
 RSpec.describe Book, type: :model do
     subject do
-        described_class.new(author: 'harry potter')
+        described_class.new(title: 'harry potter', author: 'RL Stine', prices: '21.23', published: '2021-02-02')
     end
 
     it 'is valid with valid attributes' do
@@ -33,7 +33,7 @@ end
 
 RSpec.describe Book, type: :model do
     subject do
-        described_class.new(published: '2021-09-09')
+        described_class.new(title: 'harry potter', author: 'RL Stine', prices: '21.23', published: '2021-02-02')
     end
 
     it 'is valid with valid attributes' do
@@ -48,7 +48,7 @@ end
 
 RSpec.describe Book, type: :model do
     subject do
-        described_class.new(prices: '324.2')
+        described_class.new(title: 'harry potter', author: 'RL Stine', prices: '21.23', published: '2021-02-02')
     end
 
     it 'is valid with valid attributes' do
