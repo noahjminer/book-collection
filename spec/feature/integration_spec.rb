@@ -6,7 +6,7 @@ RSpec.describe 'Creating a book', type: :feature do
     visit new_book_path
     fill_in 'Title', with: 'harry potter'
     fill_in 'Author', with: 'R.L Stine'
-    fill_in 'Price', with: '20.00'
+    fill_in 'Price', with: 20.00
     fill_in 'Published', with: '09-09-2021'
     click_on 'Create Book'
     visit books_path
